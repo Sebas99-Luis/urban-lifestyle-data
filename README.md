@@ -27,6 +27,7 @@ El pipeline de datos está diseñado en capas para asegurar la integridad de la 
 2.  **Capa Silver (Staging):** Limpieza, normalización de tipos de datos y renombrado de columnas mediante dbt.
 3.  **Capa Gold (Marts):** Aplicación de lógica de negocio compleja para el cálculo de márgenes, costos de nómina y beneficio neto final (`fct_business_profit`).
 
+<img width="3985" height="5768" alt="Sales and Profit Analysis-2026-02-11-135022" src="https://github.com/user-attachments/assets/db495a9f-9e04-4fb2-a973-4a31e9be2ad0" />
 
 
 ---
@@ -60,6 +61,9 @@ Acceder a las interfaces:
 
 Airflow: http://localhost:8080 (User: admin / Pass: admin)
 
+<img width="2700" height="1523" alt="Skärmbild 2026-02-11 162006" src="https://github.com/user-attachments/assets/efc0686b-98dc-45d3-9752-e2a69464588f" />
+
+
 BigQuery: Consola de GCP.
 
 ## 📈 4. Visualización y Business Intelligence
@@ -70,6 +74,10 @@ KPIs Globales: Ingresos Totales, Margen Bruto y Beneficio Neto.
 Análisis por Tienda: Comparativa de rentabilidad real (Ventas vs Costos Operativos).
 
 Tendencias: Evolución temporal de ingresos frente a gastos de personal.
+
+<img width="2880" height="1800" alt="Skärmbild 2026-02-11 172731" src="https://github.com/user-attachments/assets/b8658ddf-882a-46e6-b34d-8f7bff178e41" />
+
+
 
 ## 🔒 5. Seguridad y Calidad
 Tests de dbt: Se ejecutan validaciones automáticas de unicidad, valores no nulos y relaciones de integridad referencial.
