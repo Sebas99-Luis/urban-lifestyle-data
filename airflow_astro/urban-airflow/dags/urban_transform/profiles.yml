@@ -1,0 +1,13 @@
+urban_transform:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: urban-lifestyle-data  # <--- CONFIRMA TU ID DE PROYECTO GCP
+      dataset: dbt_prod
+      threads: 1
+      # Esta ruta es interna de Docker, NO la cambies a C:\...
+      keyfile: /usr/local/airflow/dags/gcp_key.json
+      timeout_seconds: 300
+      location: EU

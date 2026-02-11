@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw_urban_source
+    database: urban-lifestyle-data
+    schema: raw_data_urban
+    tables:
+      - name: raw_sales
+      - name: raw_inventory
+      - name: raw_expenses
+      - name: raw_hr_master
+      - name: raw_hr_payroll
