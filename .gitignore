@@ -214,3 +214,8 @@ data/
 *.csv
 *.xlsx
 *.json
+
+# --- PYTHON ---
+venv/
+__pycache__/
+*.ipynb_checkpoints/
