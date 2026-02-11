@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: "Tabla de hechos de ventas con cálculo de margen."
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+      - name: profit
+        description: "Beneficio neto por transacción (Ingreso - Costo)."
+        tests:
+          - not_null
+
+  - name: fct_business_profit
+    description: "Reporte final de P&L por tienda."
+    columns:
+      - name: store_name
+        tests:
+          - unique
+          - not_null
+      - name: final_net_profit
+        description: "Beneficio real descontando nóminas."
+        tests:
+          - not_null

@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: "Vista limpia de transacciones de ventas."
+    columns:
+      - name: transaction_id
+        description: "Clave primaria de la venta."
+        tests:
+          - unique
+          - not_null
+      - name: sale_amount
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+
+  - name: stg_inventory
+    description: "Inventario con costos y proveedores extraídos del JSON."
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: base_cost
+        description: "Costo base del producto. Crítico para calcular P&L."
+        tests:
+          - not_null
+
+  - name: stg_hr_employees
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_hr_payroll
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+      - name: total_company_cost
+        tests:
+          - not_null
