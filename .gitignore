@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- SEGURIDAD PERSONALIZADA (NORR DATA) ---
+gcp_credentials.json
+.env
+secrets.json
+data/
+*.csv
+*.xlsx
+*.json
